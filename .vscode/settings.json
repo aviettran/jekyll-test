@@ -1,0 +1,6 @@
+{
+  "liquid.format": true,
+  "files.associations": {
+    "*.md": "liquid"
+  }
+}
