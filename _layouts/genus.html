@@ -3,3 +3,7 @@ layout: default
 ---
 <h2>{{ page.name }}</h2>
 <p>{{ content }}</p>
+
+{% for line in site.data.keys.genus[page.key] %}
+<p>{{ line.number }} {{ line.text }} {{ line.species }}</p>
+{% endfor %}

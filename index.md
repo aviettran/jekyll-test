@@ -1,5 +1,7 @@
 ---
-layout: home
+layout: default
 ---
 
-[Carya]({{site.baseurl}}{% link _genus/carya.md %})
+{% for genus in site.genera %}
+[{{ genus.name }}]({{ genus.url | relative_url}})
+{% endfor %}
