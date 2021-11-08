@@ -1,9 +1,13 @@
 ---
-layout: default
+layout: custom_default
 ---
 <h2>{{ page.name }}</h2>
 <p>{{ content }}</p>
 
 {% for line in site.data.keys.genus[page.key] %}
-<p>{{ line.number }} {{ line.text }} {{ line.species }}</p>
+    <div class="card">
+        <div class="card-item">{{ line.number }}</div>
+        <div class="card-item">{{ line.text }}
+            <span class=card-result>{{ line.species }}</span></div>
+    </div>
 {% endfor %}

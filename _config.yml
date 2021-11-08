@@ -8,6 +8,8 @@ github_username: aviettran
 
 # Build settings
 theme: minima
+sass:
+  sass_dir: _sass
 
 collections:
   genera:
