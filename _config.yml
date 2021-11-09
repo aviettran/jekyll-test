@@ -8,8 +8,26 @@ github_username: aviettran
 
 # Build settings
 theme: minima
+header_pages:
+  - _pages/list_of_genera.md
+  - _pages/list_of_species.md
+  - about.md
+
 sass:
   sass_dir: _sass
+
+plugins:
+  - jekyll-datapage-generator
+
+page_gen:
+  - data: species
+    template: species
+    title_expr: record['genus'] + " " + record['species']
+    name_expr: record['genus'] + "_" + record['species']
+    dir: species
+
+include:
+  - _pages
 
 collections:
   genera:

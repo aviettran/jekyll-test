@@ -8,6 +8,6 @@ layout: custom_default
     <div class="card">
         <div class="card-item">{{ line.number }}</div>
         <div class="card-item">{{ line.text }}
-            <span class=card-result>{{ line.species }}</span></div>
+            <span class=card-result><a href="{{ line.species | replace: " ", "_" | downcase | datapage_url: "species" | relative_url }}">{{ line.species }}</a></span></div>
     </div>
 {% endfor %}
