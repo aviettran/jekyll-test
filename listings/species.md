@@ -1,6 +1,7 @@
 ---
 title: Species
 layout: custom_default
+permalink: /species/
 ---
     
 {% for _species in site.data.species %}
