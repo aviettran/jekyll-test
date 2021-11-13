@@ -7,11 +7,12 @@ url: ""
 github_username: aviettran
 
 # Build settings
-theme: minima
-header_pages:
-  - listings/genera.md
-  - listings/species.md
-  - about.md
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: dirt
+author_profile: false
+search: true
+atom_feed:
+  hide: true
 
 sass:
   sass_dir: _sass

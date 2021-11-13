@@ -1,0 +1,7 @@
+main:
+  - title: Genera
+    url: /genera/
+  - title: Species
+    url: /species/
+  - title: About
+    url: /about/
