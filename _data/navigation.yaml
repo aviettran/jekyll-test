@@ -1,4 +1,6 @@
 main:
+  - title: Families
+    url: /families/
   - title: Genera
     url: /genera/
   - title: Species

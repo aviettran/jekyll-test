@@ -5,5 +5,5 @@ permalink: /species/
 ---
     
 {% for _species in site.data.species %}
-[{{ _species.genus }} {{ _species.species }}]({{ _species.genus | append: "/" | append: _species.species | downcase | relative_url }})
+[{{ _species.genus }} {{ _species.name }}]({{ _species.family | append: "/" | append: _species.genus | append: "/" | append: _species.name | downcase | relative_url }})
 {% endfor %}

@@ -19,15 +19,20 @@ sass:
 
 page_gen-dirs: true
 page_gen:
+  - data: families
+    template: family
+    title: family
+    name: name
+    dir: /
   - data: species
     template: species
-    title_expr: record['genus'] + " " + record['species']
-    name: species
-    dir_expr: record['genus'].downcase
+    title_expr: record['genus'] + " " + record['name']
+    name: name
+    dir_expr: record['family'].downcase + "/" + record['genus'].downcase
   - data: genera
     template: genus
     title: genus
-    name: genus
-    dir: /
+    name: name
+    dir_expr: record['family'].downcase
 
 permalink: pretty

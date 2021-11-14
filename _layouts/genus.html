@@ -3,11 +3,12 @@ layout: custom_default
 ---
 <p>{{ page.description }}</p>
 
-{% assign key = page.genus | downcase %}
+{% assign key = page._name | downcase %}
 {% for line in site.data.keys.genus[key] %}
+    {% assign genusSpecies = line.genus | append: " " | append: line.species %}
     <div class="card">
         <div class="card-item">{{ line.number }}</div>
         <div class="card-item">{{ line.text }}
-            <span class=card-result><a href="{{ line.species | replace: " ", "/" | downcase | relative_url }}">{{ line.species }}</a></span></div>
+            <span class=card-result><a href="{{ line.family | append: "/" | append: genusSpecies | replace: " ", "/" | downcase | relative_url }}">{{ genusSpecies }}</a></span></div>
     </div>
 {% endfor %}
