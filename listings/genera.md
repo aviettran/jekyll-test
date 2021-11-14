@@ -3,7 +3,6 @@ title: Genera
 layout: custom_default
 permalink: /genera/
 ---
-    
-{% for genus in site.genera %}
-[{{ genus.name }}]({{ genus.url | relative_url}})
+{% for genus in site.data.genera %}
+[{{ genus.genus }}]({{ genus.genus | downcase | datapage_url: "genera" | relative_url}})
 {% endfor %}

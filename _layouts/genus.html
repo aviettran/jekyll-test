@@ -1,10 +1,10 @@
 ---
 layout: custom_default
 ---
-<h2>{{ page.name }}</h2>
-<p>{{ content }}</p>
+<p>{{ page.description }}</p>
 
-{% for line in site.data.keys.genus[page.key] %}
+{% assign key = page.genus | downcase %}
+{% for line in site.data.keys.genus[key] %}
     <div class="card">
         <div class="card-item">{{ line.number }}</div>
         <div class="card-item">{{ line.text }}

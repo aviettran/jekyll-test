@@ -26,12 +26,10 @@ page_gen:
     template: species
     title_expr: record['genus'] + " " + record['species']
     name_expr: record['genus'] + "_" + record['species']
-    dir: species
+    dir_expr: record['genus'] + "/" + record['species']
+  - data: genera
+    template: genus
+    title: genus
+    name: genus
 
 permalink: pretty
-
-collections:
-  genera:
-    output: true
-  species:
-    output: true
