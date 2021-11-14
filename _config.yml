@@ -17,19 +17,17 @@ atom_feed:
 sass:
   sass_dir: _sass
 
-plugins:
-  - jekyll-datapage-generator
-
 page_gen-dirs: true
 page_gen:
   - data: species
     template: species
     title_expr: record['genus'] + " " + record['species']
-    name_expr: record['genus'] + "_" + record['species']
-    dir_expr: record['genus'] + "/" + record['species']
+    name: species
+    dir_expr: record['genus'].downcase
   - data: genera
     template: genus
     title: genus
     name: genus
+    dir: /
 
 permalink: pretty
