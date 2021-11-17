@@ -2,3 +2,10 @@
 layout: custom_default
 ---
 <p>{{ page.description }}</p>
+
+
+{% assign genera = site.data.genera | where: "family", page._name %}
+{% for genus in genera %}
+    <p>
+        <a href="{{ genus.family | append: "/" | append: genus.name | downcase | relative_url}}">{{ genus.name }}</a></p>
+{% endfor %}

@@ -1,6 +1,7 @@
 ---
 layout: custom_default
 ---
-{% for genus in site.genera %}
-[{{ genus.name }}]({{ genus.url | relative_url}})
-{% endfor %}
+
+## Unnamed Online Flora for Alan Weakley's Flora of the Southeastern United States
+
+Some basic information could go here

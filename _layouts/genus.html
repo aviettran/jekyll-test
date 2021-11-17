@@ -1,7 +1,10 @@
 ---
 layout: custom_default
 ---
-<p>{{ page.description }}</p>
+{% assign paragraphs = page.description | split: "\n" %}
+{% for paragraph in paragraphs %}
+    <p>{{ paragraph }}</p>
+{% endfor %}
 
 {% assign key = page._name | downcase %}
 {% for line in site.data.keys.genus[key] %}
