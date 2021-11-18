@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "custom.css",
+	"sources": [
+		"custom.scss",
+		"_sass/_layout.scss"
+	],
+	"sourcesContent": [
+		"@import \"layout\";\n",
+		"// Minimal mistakes: no sidebar\narticle.page {\n  float: left;\n  width: 100%;\n}\n\n.card {\n  box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.2);\n  padding: 0.5rem;\n  display: flex;\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n}\n\n.card-item {\n  margin: 0.5rem;\n}\n\n.card-result {\n  float: right;\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}\n"
+	],
+	"names": [],
+	"mappings": "ACCA,AAAA,OAAO,AAAA,KAAK,CAAC,EACX,KAAK,EAAE,IAAI,EACX,KAAK,EAAE,IAAI,GACZ;;AAED,AAAA,KAAK,CAAC,EACJ,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,kBAAkB,EAC9C,OAAO,EAAE,MAAM,EACf,OAAO,EAAE,IAAI,EACb,UAAU,EAAE,IAAI,EAChB,aAAa,EAAE,IAAI,GACpB;;AAED,AAAA,UAAU,CAAC,EACT,MAAM,EAAE,MAAM,GACf;;AAED,AAAA,YAAY,CAAC,EACX,KAAK,EAAE,KAAK,EACZ,YAAY,EAAE,MAAM,EACpB,aAAa,EAAE,MAAM,GACtB"
+}

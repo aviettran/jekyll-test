@@ -1,0 +1,9 @@
+article.page { float: left; width: 100%; }
+
+.card { box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.2); padding: 0.5rem; display: flex; margin-top: 1rem; margin-bottom: 1rem; }
+
+.card-item { margin: 0.5rem; }
+
+.card-result { float: right; padding-left: 0.5rem; padding-right: 0.5rem; }
+
+/*# sourceMappingURL=custom.css.map */
